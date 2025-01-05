@@ -30,24 +30,21 @@
           "type": "string",
           "required": true,
           "label": "Dlaczego chcesz dołączyć do nas?",
-          "name": "why",
-          "inline": false
+          "name": "why"
         },
         {
           "inputType": "textarea",
           "type": "string",
           "required": true,
           "label": "Technologie, których się uczysz / znasz",
-          "name": "technologies",
-          "inline": false
+          "name": "technologies"
         },
         {
           "inputType": "textarea",
           "type": "string",
           "required": true,
           "label": "Coś o sobie",
-          "name": "about",
-          "inline": false
+          "name": "about"
         }
       ]
     }
@@ -83,16 +80,14 @@
           "type": "string",
           "required": true,
           "label": "Dlaczego chcesz dołączyć do nas?",
-          "name": "why",
-          "inline": false
+          "name": "why"
         },
         {
           "inputType": "textarea",
           "type": "string",
           "required": true,
           "label": "Coś o sobie",
-          "name": "about",
-          "inline": false
+          "name": "about"
         }
       ]
     }
@@ -128,16 +123,14 @@
           "type": "string",
           "required": true,
           "label": "Dlaczego chcesz dołączyć do nas?",
-          "name": "why",
-          "inline": false
+          "name": "why"
         },
         {
           "inputType": "textarea",
           "type": "string",
           "required": true,
           "label": "Coś o sobie",
-          "name": "about",
-          "inline": false
+          "name": "about"
         }
       ]
     }
@@ -173,24 +166,21 @@
           "type": "string",
           "required": true,
           "label": "Dlaczego chcesz dołączyć do nas?",
-          "name": "why",
-          "inline": false
+          "name": "why"
         },
         {
           "inputType": "textarea",
           "type": "string",
           "required": true,
           "label": "Technologie, których się uczysz / znasz",
-          "name": "technologies",
-          "inline": false
+          "name": "technologies"
         },
         {
           "inputType": "textarea",
           "type": "string",
           "required": true,
           "label": "Coś o sobie",
-          "name": "about",
-          "inline": false
+          "name": "about"
         }
       ]
     }
@@ -226,24 +216,21 @@
           "type": "string",
           "required": true,
           "label": "Dlaczego chcesz dołączyć do nas?",
-          "name": "why",
-          "inline": false
+          "name": "why"
         },
         {
           "inputType": "textarea",
           "type": "string",
           "required": true,
           "label": "Technologie, których się uczysz / znasz",
-          "name": "technologies",
-          "inline": false
+          "name": "technologies"
         },
         {
           "inputType": "textarea",
           "type": "string",
           "required": true,
           "label": "Coś o sobie",
-          "name": "about",
-          "inline": false
+          "name": "about"
         }
       ]
     }
@@ -279,24 +266,21 @@
           "type": "string",
           "required": true,
           "label": "Dlaczego chcesz dołączyć do nas?",
-          "name": "why",
-          "inline": false
+          "name": "why"
         },
         {
           "inputType": "textarea",
           "type": "string",
           "required": true,
           "label": "Technologie, których się uczysz / znasz",
-          "name": "technologies",
-          "inline": false
+          "name": "technologies"
         },
         {
           "inputType": "textarea",
           "type": "string",
           "required": true,
           "label": "Coś o sobie",
-          "name": "about",
-          "inline": false
+          "name": "about"
         }
       ]
     }
