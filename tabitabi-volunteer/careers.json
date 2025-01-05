@@ -1,0 +1,255 @@
+[
+  {
+    "id": 1,
+    "position": "Programista Toriime (Frontend)",
+    "tags": ["Next.js", "Tailwind CSS", "TypeScript"],
+    "category": "Development",
+    "type": "Zdalna",
+    "descriptionSource": "md",
+    "description": "https://fredqah54zct.objectstorage.eu-frankfurt-1.oci.customer-oci.com/n/fredqah54zct/b/toriime/o/tt-volunteer%2Fpos1.md",
+    "form": {
+      "fields": [
+        {
+          "inputType": "text",
+          "type": "string",
+          "required": true,
+          "label": "Imię",
+          "name": "name"
+        },
+        {
+          "inputType": "text",
+          "type": "string",
+          "required": true,
+          "label": "Email / Discord",
+          "name": "contact"
+        },
+        {
+          "inputType": "textarea",
+          "type": "string",
+          "required": true,
+          "label": "Dlaczego chcesz dołączyć do nas?",
+          "name": "why"
+        },
+        {
+          "inputType": "textarea",
+          "type": "string",
+          "required": true,
+          "label": "Technologie, których się uczysz / znasz",
+          "name": "technologies"
+        },
+        {
+          "inputType": "textarea",
+          "type": "string",
+          "required": true,
+          "label": "Coś o sobie",
+          "name": "about"
+        }
+      ]
+    }
+  },
+  {
+    "id": 2,
+    "position": "UI/UX Designer",
+    "tags": ["Design"],
+    "category": "Projektowanie",
+    "type": "Zdalna",
+    "descriptionSource": "md",
+    "description": "https://fredqah54zct.objectstorage.eu-frankfurt-1.oci.customer-oci.com/n/fredqah54zct/b/toriime/o/tt-volunteer%2Fpos2.md",
+    "form": {
+      "fields": [
+        {
+          "inputType": "text",
+          "type": "string",
+          "required": true,
+          "label": "Imię",
+          "name": "name"
+        },
+        {
+          "inputType": "text",
+          "type": "string",
+          "required": true,
+          "label": "Email / Discord",
+          "name": "contact"
+        },
+        {
+          "inputType": "textarea",
+          "type": "string",
+          "required": true,
+          "label": "Dlaczego chcesz dołączyć do nas?",
+          "name": "why"
+        },
+        {
+          "inputType": "textarea",
+          "type": "string",
+          "required": true,
+          "label": "Coś o sobie",
+          "name": "about"
+        }
+      ]
+    }
+  },
+  {
+    "id": 3,
+    "position": "Grafik",
+    "tags": ["Ilustracje", "Grafika", "Loga"],
+    "category": "Projektowanie",
+    "type": "Zdalna",
+    "descriptionSource": "md",
+    "description": "https://fredqah54zct.objectstorage.eu-frankfurt-1.oci.customer-oci.com/n/fredqah54zct/b/toriime/o/tt-volunteer%2Fpos3.md",
+    "form": {
+      "fields": [
+        {
+          "inputType": "text",
+          "type": "string",
+          "required": true,
+          "label": "Imię",
+          "name": "name"
+        },
+        {
+          "inputType": "text",
+          "type": "string",
+          "required": true,
+          "label": "Email / Discord",
+          "name": "contact"
+        },
+        {
+          "inputType": "textarea",
+          "type": "string",
+          "required": true,
+          "label": "Dlaczego chcesz dołączyć do nas?",
+          "name": "why"
+        },
+        {
+          "inputType": "textarea",
+          "type": "string",
+          "required": true,
+          "label": "Coś o sobie",
+          "name": "about"
+        }
+      ]
+    }
+  },
+  {
+    "id": 4,
+    "position": "Programista C# (AuthAPI)",
+    "tags": ["C#", ".NET", "Auth"],
+    "category": "Development",
+    "type": "Zdalna",
+    "descriptionSource": "md",
+    "description": "https://fredqah54zct.objectstorage.eu-frankfurt-1.oci.customer-oci.com/n/fredqah54zct/b/toriime/o/tt-volunteer%2Fpos3.md",
+    "form": {
+      "fields": [
+        {
+          "inputType": "text",
+          "type": "string",
+          "required": true,
+          "label": "Imię",
+          "name": "name"
+        },
+        {
+          "inputType": "text",
+          "type": "string",
+          "required": true,
+          "label": "Email / Discord",
+          "name": "contact"
+        },
+        {
+          "inputType": "textarea",
+          "type": "string",
+          "required": true,
+          "label": "Dlaczego chcesz dołączyć do nas?",
+          "name": "why"
+        },
+        {
+          "inputType": "textarea",
+          "type": "string",
+          "required": true,
+          "label": "Coś o sobie",
+          "name": "about"
+        }
+      ]
+    }
+  },
+  {
+    "id": 5,
+    "position": "Programista Toriime (Backend/Fullstack)",
+    "tags": ["Nest.js", "MongoDB"],
+    "category": "Development",
+    "type": "Zdalna",
+    "descriptionSource": "md",
+    "description": "https://fredqah54zct.objectstorage.eu-frankfurt-1.oci.customer-oci.com/n/fredqah54zct/b/toriime/o/tt-volunteer%2Fpos3.md",
+    "form": {
+      "fields": [
+        {
+          "inputType": "text",
+          "type": "string",
+          "required": true,
+          "label": "Imię",
+          "name": "name"
+        },
+        {
+          "inputType": "text",
+          "type": "string",
+          "required": true,
+          "label": "Email / Discord",
+          "name": "contact"
+        },
+        {
+          "inputType": "textarea",
+          "type": "string",
+          "required": true,
+          "label": "Dlaczego chcesz dołączyć do nas?",
+          "name": "why"
+        },
+        {
+          "inputType": "textarea",
+          "type": "string",
+          "required": true,
+          "label": "Coś o sobie",
+          "name": "about"
+        }
+      ]
+    }
+  },
+  {
+    "id": 6,
+    "position": "Programista TabiTabi Accounts (Frontend)",
+    "tags": ["Nuxt.js", "Vue.js", "Typescript"],
+    "category": "Development",
+    "type": "Zdalna",
+    "descriptionSource": "md",
+    "description": "https://fredqah54zct.objectstorage.eu-frankfurt-1.oci.customer-oci.com/n/fredqah54zct/b/toriime/o/tt-volunteer%2Fpos3.md",
+    "form": {
+      "fields": [
+        {
+          "inputType": "text",
+          "type": "string",
+          "required": true,
+          "label": "Imię",
+          "name": "name"
+        },
+        {
+          "inputType": "text",
+          "type": "string",
+          "required": true,
+          "label": "Email / Discord",
+          "name": "contact"
+        },
+        {
+          "inputType": "textarea",
+          "type": "string",
+          "required": true,
+          "label": "Dlaczego chcesz dołączyć do nas?",
+          "name": "why"
+        },
+        {
+          "inputType": "textarea",
+          "type": "string",
+          "required": true,
+          "label": "Coś o sobie",
+          "name": "about"
+        }
+      ]
+    }
+  }
+]
