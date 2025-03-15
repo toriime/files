@@ -1,7 +1,7 @@
 <p align="center">
     <br />
     <a href="https://rapier.tabitabi.dev">
-        <img src="assets/wordmark.svg" alt="WordMark" width="230" />
+        <img src="../../../assets/wordmark.svg" alt="WordMark" width="230" />
     </a>
     <br />
     <br />
