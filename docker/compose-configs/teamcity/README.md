@@ -1,6 +1,6 @@
 <p align="center">
     <br />
-    <a href="https://tabitabi.dev">
+    <a href="https://rapier.tabitabi.dev">
         <img src="assets/wordmark.svg" alt="WordMark" width="230" />
     </a>
     <br />
@@ -12,4 +12,10 @@
 
 # About
 
-This repository contains various files and configurations used by TabiTabi.
+Ready to use docker compose configuration for [TeamCity](https://www.jetbrains.com/teamcity/) CI/CD server.
+
+The config includes:
+- TeamCity server
+- PostgreSQL database for the TeamCity server
+- Traefik reverse proxy routing to the TeamCity server
+- TeamCity agent

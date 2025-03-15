@@ -1,0 +1,20 @@
+entryPoints:
+  web:
+    address: ":80"
+  websecure:
+    address: ":443"
+serversTransport:
+  insecureSkipVerify: true
+providers:
+  docker:
+    endpoint: "unix:///var/run/docker.sock"
+    exposedByDefault: false
+certificatesResolvers:
+  letsencrypt:
+    acme:
+      email: email@domain.tld
+      storage: /certs/acme.json
+      caServer: https://acme-v02.api.letsencrypt.org/directory 
+      dnsChallenge:
+        provider: cloudflare
+        delayBeforeCheck: "10"

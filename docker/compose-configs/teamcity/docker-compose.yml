@@ -1,0 +1,85 @@
+services:
+
+  # TeamCity Server
+  teamcity:
+    image: jetbrains/teamcity-server:latest
+    container_name: tabi-teamcity-server
+    networks:
+      - tabi-network
+    volumes:
+      - tc-serverdata:/data/teamcity_server/datadir
+      - tc-serverlogs:/opt/teamcity/logs
+    environment:
+      - TEAMCITY_SERVER_MEM_OPTS="-Xmx3G"
+      - TEAMCITY_HTTPS_PROXY_ENABLED=true
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.teamcity.rule=Host(`teamcity.domain.tld`)"
+      - "traefik.http.routers.teamcity.entrypoints=web"
+      - "traefik.http.routers.teamcity.tls=true"
+      - "traefik.http.routers.teamcity.tls.certresolver=letsencrypt"
+      - "traefik.http.services.teamcity.loadbalancer.server.port=8111"
+    depends_on:
+      - tabi-teamcity-db
+
+  teamcity-db:
+    image: postgres:latest
+    container_name: tabi-teamcity-db
+    networks:
+      - tabi-network
+    volumes:
+      - tc-dbdata:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_USER=teamcity
+      - POSTGRES_PASSWORD=<password>
+      - POSTGRES_DB=teamcity
+      - PG_DATA=/var/lib/postgresql/data
+
+
+  # TeamCity Agent
+  teamcity-agent:
+    image: jetbrains/teamcity-agent:latest
+    container_name: tabi-teamcity-agent
+    networks:
+      - tabi-network
+    environment:
+      - SERVER_URL=<server-url>
+      - AGENT_NAME=<agent-name>
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /usr/local/bin/docker-compose:/usr/local/bin/docker-compose
+      - /opt/buildagent/work:/opt/buildagent/work
+      - /opt/buildagent/temp:/opt/buildagent/temp
+      - /opt/buildagent/tools:/opt/buildagent/tools
+      - /opt/buildagent/plugins:/opt/buildagent/plugins
+      - /opt/buildagent/system:/opt/buildagent/system
+
+  
+  # traefik reverse proxy
+  traefik:
+    image: traefik:v3.3
+    container_name: tabi-traefik
+    command: --providers.docker
+    networks:
+      - tabi-network
+    environment:
+      - CF_API_EMAIL=${CLOUDFLARE_API_EMAIL}
+      - CF_DNS_API_TOKEN=${CLOUDFLARE_API_TOKEN}
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - ./traefik/traefik.yml:/traefik.yml:ro
+      - tabi-traefik-certs:/certs
+      # - ./traefik/acme.json:/etc/traefik/acme.json
+
+networks:
+  tabi-network:
+    driver: bridge
+
+volumes:
+  tc-serverdata:
+  tc-serverlogs:
+  tc-dbdata:
+  tabi-traefik-certs:
