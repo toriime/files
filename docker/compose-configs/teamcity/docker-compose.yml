@@ -20,7 +20,7 @@ services:
       - "traefik.http.routers.teamcity.tls.certresolver=letsencrypt"
       - "traefik.http.services.teamcity.loadbalancer.server.port=8111"
     depends_on:
-      - tabi-teamcity-db
+      - teamcity-db
 
   teamcity-db:
     image: postgres:latest
