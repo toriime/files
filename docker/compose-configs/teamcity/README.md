@@ -19,3 +19,5 @@ The config includes:
 - PostgreSQL database for the TeamCity server
 - Traefik reverse proxy routing to the TeamCity server
 - TeamCity agent
+
+Important: Make sure to change the email address for amce challenge in the `traefik/traefik.yml` file.
