@@ -20,4 +20,4 @@ The config includes:
 - Traefik reverse proxy routing to the TeamCity server
 - TeamCity agent
 
-Important: Make sure to change the email address for amce challenge in the `traefik/traefik.yml` file.
+Important: Make sure to change the email address for acme challenge in the `traefik/traefik.yml` file.
